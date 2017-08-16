@@ -1,0 +1,17 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="apiPersistence">
+
+        <class>model.TblClienteEntity</class>
+        <class>model.TblRestaurantEntity</class>
+        <class>postModel.restaurantPostModel</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+            <property name="javax.persistence.jdbc.user" value="system"/>
+            <property name="javax.persistence.jdbc.password" value="system"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
